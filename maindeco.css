@@ -1,0 +1,54 @@
+body {
+    
+    background: #ff83ff;
+    
+    }
+h1 {
+
+text-align: center;
+
+}
+h2{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.desc{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+.menu {
+    list-style-type: none;
+}
+.menu a {
+    font-style: italic;
+    color: black;
+    font-size: large;
+}
+
+.charractheristics{
+    list-style: none;
+    padding: 0;
+}
+.charractheristics li{
+    font-style: oblique;
+    font-size: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.charractheristics li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("photos/твоюмать.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

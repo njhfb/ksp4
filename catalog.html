@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="maindeco.css">
+</head>
+<body>
+    <header>
+        <h1>Выбирайте дрипчик с умом</h1>
+    </header>
+    <hr>
+    <ul class="menu">
+        <li> <a href="cart.html">Корзина</a></li>
+        <li> <a href="catalog.html">Каталог</a></li>
+        <li> <a href="index.html">Главная</a></li>
+    </ul>    
+    <hr>
+    <div>
+        <input type="text" id="idFilter" placeholder="gng just type already"/>
+        <button onclick="filterById()">Фильтр</button>
+        <button onclick="clearFilter()">Сброс</button>
+    </div>
+    <ul id="catalog">
+        <li id="ёж"><img src="photos/Shadow work.jpg" alt="дриповый ёжик" width="150" height="150">
+            <br><a href="hedgehog.html">подробнее о ёжике</a>
+        </li>
+        <li id="маг"><img src="photos/ .jpg" alt="дриповый маг" width="150" height="150">
+            <br><a href="mage.html">подробнее о маге</a>
+        </li>
+        <li id="гуфи"><img src="photos/Welcome To Value Village!.jpg" alt="дриповый телефон" width="150" height="150">
+            <br><a href="goofytelephone.html">подробнее о телефоне</a>
+        </li>
+    </ul>
+    <hr>
+    <p>© все права защищены 2026</p>
+
+    <script src="filter.js"></script>
+</body>
+</html>
