@@ -6,7 +6,15 @@ const products = [
     
 let cart = [];
 
+function loadCart() {
+    let saved = localStorage.getItem('cart');
+    if (saved) {
+        cart = JSON.parse(saved);
+    }
+}
+
 function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function getTotal() {
@@ -95,3 +103,4 @@ function addToCart(productId) {
     }
 }
 
+loadCart()
